@@ -48,8 +48,7 @@ if pagina_seleccionada == '🐇Temática':
         subjetividad, la intuición y el sentimiento. Fue una reivindicación del individuo, del
         mundo interior y de aquello que la razón pura no podía abarcar. Tres temas centrales
         fueron la naturaleza y el sentimiento, el yo y la subjetividad, y lo irracional y lo
-        trascendente. La naturaleza se convirtió en un ser vivo, dinámico e indomable, el yo
-        en un héroe introspectivo, y lo irracional en un portal hacia lo sublime y lo misterioso.
+        trascendente.  En primer lugar, la naturaleza dejó de ser vista como una simple máquina que podía ser analizada (como la veía la ciencia), para convertirse en un ser vivo, dinámico y, a menudo, indomable. Los románticos buscaron una conexión mística con ella, viéndola como un reflejo del espíritu humano y un escape de la industrialización y la artificialidad de la vida urbana. En segundo lugar, el yo y la subjetividad puso un énfasis radical en la experiencia personal y el genio individual. El filósofo o artista romántico era visto como un héroe, un ser dotado de una visión única capaz de acceder a verdades más profundas que las que ofrecía la lógica. En tercer lugar, lo irracional y lo trascendente exploró activamente lo oscuro, lo misterioso, lo sublime y lo infinito. Fenómenos como los sueños, el folclore, lo sobrenatural y la historia medieval (en contraste con la antigüedad clásica preferida por la Ilustración) se convirtieron en temas de gran interés, buscando la verdad en el corazón de lo irracional y lo desconocido.
         </p>
         """
 
@@ -156,6 +155,7 @@ if st.button("🌟 Generar Diario"):
         f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>",
         unsafe_allow_html=True
     )
+
 
 
 
