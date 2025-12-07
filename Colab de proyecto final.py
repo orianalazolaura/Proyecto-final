@@ -124,7 +124,7 @@ No sé si es un glitch en mi matrix interior o un destello de claridad en la ne�
 Su resplandor rosa y cyan ilumina cada rincón de mi existencia vaporwave.
 
 "🌧️ Clima del alma: {clima} 🌈"
-Cada nube refleja mi aura retro-futurista, vibrando en 80s pastel y synthwave.
+Cada nube refleja mi aura retro-futurista, vibrando en la década de los ochenta, pastel y synthwave.
 
 "💾 Nadie necesita comprenderlo. Basta con que exista."
                                               "— Tu Alma Romántica 🌸✨"
@@ -132,6 +132,7 @@ Cada nube refleja mi aura retro-futurista, vibrando en 80s pastel y synthwave.
 st.text(entrada)
     if st.button("🌟 Generar Diario"):
         st.markdown(f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>", unsafe_allow_html=True)
+
 
 
 
