@@ -265,7 +265,7 @@ retro-futurista. Todo vibra en 80s pastel y synthwave.
 💾 Nadie necesita comprenderlo. Basta con que exista.
                                               — Tu Alma Romántica 🌸✨
 """
-    return entrada
+return entrada
 
 # ------------------------------------------------------------
 # PREGUNTAS AL USUARIO
@@ -286,6 +286,7 @@ print("\n───────────────────────�
 print("✨ TU ENTRADA DE DIARIO VAPORWAVE ✨")
 print("──────────────────────────────────────\n")
 print(generar_diario_vaporwave(diario))
+
 
 
 
