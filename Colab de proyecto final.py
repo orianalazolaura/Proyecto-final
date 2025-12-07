@@ -27,9 +27,12 @@ if pagina_seleccionada == '🐇Temática':
         "<h1 style='text-align: center; color:#FF77FF;'>💖 Corazones Desbordados 💖</h1>",
         unsafe_allow_html=True
     )
-
-    col1, col2 = st.columns([1, 2])
-    col1.image("imagen del romanticismo.jpg", caption='Arte Romántico', width=300)
+    with st.container():
+    col1, col2 = st.columns([1, 1.2])
+    with col1:
+        st.image("imagen del romanticismo.jpg", caption="Arte Romántico", width=300)
+    with col2:
+        st.markdown(texto, unsafe_allow_html=True)
 
     texto = """
     <p style='color:#FF99FF; font-size:16px;'>
@@ -137,3 +140,4 @@ if st.button("🌟 Generar Diario"):
         f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>",
         unsafe_allow_html=True
     )
+
