@@ -132,14 +132,3 @@ Cada nube refleja mi aura retro-futurista, vibrando en la década de los ochenta
 st.text(entrada)
     if st.button("🌟 Generar Diario"):
         st.markdown(f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>", unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-
-
-
