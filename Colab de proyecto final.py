@@ -23,25 +23,39 @@ pagina_seleccionada = st.sidebar.selectbox(
 # PÁGINA 1 – TEMÁTICA
 # ------------------------------------------------------------
 if pagina_seleccionada == '🐇Temática':
+
     st.markdown(
         "<h1 style='text-align: center; color:#FF77FF;'>💖 Corazones Desbordados 💖</h1>",
         unsafe_allow_html=True
     )
-with st.container():
-    col1, col2 = st.columns([1, 1.2])
 
-    with col1:
-        st.image("imagen del romanticismo.jpg", caption="Arte Romántico", width=300)
+    # Todo este bloque debe estar DENTRO del if
+    with st.container():
+        col1, col2 = st.columns([1, 1.2])
 
-    # Primero se define el texto
-    texto = """
-    <p style='color:#FF99FF; font-size:16px;'>
-    El Romanticismo no fue solo un movimiento artístico y literario que floreció en Europa a finales del siglo XVIII y principios del XIX, sino también una profunda corriente filosófica y cultural que surgió como una reacción directa y a menudo vehemente contra el racionalismo estricto de la Ilustración. Mientras que la Ilustración había exaltado la razón, la objetividad y el análisis científico como el camino principal hacia el conocimiento y el progreso, el Romanticismo se centró en la primacía de la emoción, la subjetividad, la intuición y el sentimiento. Fue una reivindicación del individuo, del mundo interior y de todo aquello que la razón pura no podía abarcar. Tres temas centrales de esta época fueron la naturaleza y el sentimiento, el yo y la subjetividad y lo irracional y lo trascendente. En primer lugar, la naturaleza dejó de ser vista como una simple máquina que podía ser analizada (como la veía la ciencia), para convertirse en un ser vivo, dinámico y, a menudo, indomable. Los románticos buscaron una conexión mística con ella, viéndola como un reflejo del espíritu humano y un escape de la industrialización y la artificialidad de la vida urbana. En segundo lugar, el yo y la subjetividad puso un énfasis radical en la experiencia personal y el genio individual. El filósofo o artista romántico era visto como un héroe, un ser dotado de una visión única capaz de acceder a verdades más profundas que las que ofrecía la lógica. En tercer lugar, lo irracional y lo trascendente exploró activamente lo oscuro, lo misterioso, lo sublime y lo infinito. Fenómenos como los sueños, el folclore, lo sobrenatural y la historia medieval (en contraste con la antigüedad clásica preferida por la Ilustración) se convirtieron en temas de gran interés, buscando la verdad en el corazón de lo irracional y lo desconocido.
-    </p>
-    """
-    # Luego lo mostramos en col2
-    with col2:
-        st.markdown(texto, unsafe_allow_html=True)
+        with col1:
+            st.image("imagen del romanticismo.jpg", caption="Arte Romántico", width=300)
+
+        # Texto de explicación del Romanticismo
+        texto = """
+        <p style='color:#FF99FF; font-size:16px;'>
+        El Romanticismo no fue solo un movimiento artístico y literario que floreció en Europa
+        a finales del siglo XVIII y principios del XIX, sino también una profunda corriente
+        filosófica y cultural que surgió como una reacción directa y a menudo vehemente contra
+        el racionalismo estricto de la Ilustración. Mientras que la Ilustración había exaltado
+        la razón, la objetividad y el análisis científico como el camino principal hacia el
+        conocimiento y el progreso, el Romanticismo se centró en la primacía de la emoción, la
+        subjetividad, la intuición y el sentimiento. Fue una reivindicación del individuo, del
+        mundo interior y de aquello que la razón pura no podía abarcar. Tres temas centrales
+        fueron la naturaleza y el sentimiento, el yo y la subjetividad, y lo irracional y lo
+        trascendente. La naturaleza se convirtió en un ser vivo, dinámico e indomable, el yo
+        en un héroe introspectivo, y lo irracional en un portal hacia lo sublime y lo misterioso.
+        </p>
+        """
+
+        with col2:
+            st.markdown(texto, unsafe_allow_html=True)
+
 
 # ------------------------------------------------------------
 # PÁGINA 2 – PERSONALIDAD
@@ -142,5 +156,6 @@ if st.button("🌟 Generar Diario"):
         f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>",
         unsafe_allow_html=True
     )
+
 
 
