@@ -216,7 +216,7 @@ print("✨ RESULTADO DE TU PERSONALIDAD ✨")
 print("──────────────────────────────────────")
 print(interpretar_resultado(respuestas))
 
-elif pagina_seleccionada == '🐇Diario de un genio incomprendido':
+if pagina_seleccionada == '🐇Diario de un genio incomprendido':
 
     # Agregamos un título
     st.markdown("<h1 style='text-align: center;'>¿Cómo te sientes el día de hoy?</h1>", unsafe_allow_html=True)
@@ -286,6 +286,7 @@ print("\n───────────────────────�
 print("✨ TU ENTRADA DE DIARIO VAPORWAVE ✨")
 print("──────────────────────────────────────\n")
 print(generar_diario_vaporwave(diario))
+
 
 
 
