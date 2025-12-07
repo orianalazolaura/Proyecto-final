@@ -1,34 +1,3 @@
-# Antes de ejecutar un script de Python en Streamlit debes definir la carpeta donde se encuentra tus archivos
-# cd ruta_de_tu_carpeta 
-# o abrimos el folder desde visual Studio Code 
-
-
-# Primero creamos un entorno virtual para instalar Streamlit y otras librerías que necesitemos.
-# python -m venv .venv
-# Esto nos permite crear un entorno virtual donde instalaremos Streamlit 
-# y observaremos la página web que se está generando en este script.
-
-# Luego activamos el entorno virtual.
-# En Windows:
-# .venv\Scripts\activate
-# deactivate
-# En MacOS/Linux:
-# source .venv/bin/activate
-
-# Acontinuación instalamos Streamlit 
-# pip install Streamlit
-
-# Este código sirve para acceder una página web en tu navegador que te brinda información sobre Streamlit.
-# Pero se ejecuta en la terminal Python de tu computadora, no en Jupyter Notebook.
-# python -m streamlit hello
-
-# Este comando sirve para ejecutar un script de Python en Streamlit.
-# Pero se ejecuta en la terminal de tu computadora, no en Jupyter Notebook.
-# OJO: Debes antes tener instalado Streamlit en tu computadora, debes antes definir la ruta de tus archivos y 
-##     tener un script de Python (your_script.py) que quieras ejecutar en Streamlit.
-# python -m streamlit run PC4.py
-#  your_script.py
-
 # Este código sirve para hacer un primer programa en Streamlit.
 import streamlit as st
 
@@ -286,9 +255,3 @@ print("\n───────────────────────�
 print("✨ TU ENTRADA DE DIARIO VAPORWAVE ✨")
 print("──────────────────────────────────────\n")
 print(generar_diario_vaporwave(diario))
-
-
-
-
-
-
