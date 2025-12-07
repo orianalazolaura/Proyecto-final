@@ -126,14 +126,14 @@ Su resplandor rosa y cyan ilumina cada rincón de mi existencia vaporwave.
 🌧️ Clima del alma: {clima} 🌈  
 Cada nube refleja mi aura retro-futurista, vibrando en la década de los ochenta, pastel y synthwave.
 
-💾 Nadie necesita comprenderlo. Basta con que exista.  
+💾 Nadie necesita comprenderlo.  
+Basta con que exista.
+
 — *Tu Alma Romántica* 🌸✨
 """
     return entrada
-    if st.button("🌟 Generar Diario"):
+if st.button("🌟 Generar Diario"):
     st.markdown(
         f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>",
         unsafe_allow_html=True
     )
-
-
