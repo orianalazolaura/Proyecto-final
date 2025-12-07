@@ -115,21 +115,22 @@ elif pagina_seleccionada == '🐇Diario de un genio incomprendido':
 
     def generar_diario_vaporwave(sentimiento, deseo, clima):
         return f"""
-    entrada = """
-"🌴EL DIARIO DEL GENIO INCOMPRENDIDO 🌴"
-"💭 Hoy me siento: {sentimiento} 🌸"
+    entrada = f"""
+🌴EL DIARIO DEL GENIO INCOMPRENDIDO 🌴
+💭 Hoy me siento: {sentimiento} 🌸
 No sé si es un glitch en mi matrix interior o un destello de claridad en la neón-tormenta.
 
-"✨ Deseo más profundo: {deseo} ✨"
+✨ Deseo más profundo: {deseo} ✨
 Su resplandor rosa y cyan ilumina cada rincón de mi existencia vaporwave.
 
-"🌧️ Clima del alma: {clima} 🌈"
+🌧️ Clima del alma: {clima} 🌈
 Cada nube refleja mi aura retro-futurista, vibrando en la década de los ochenta, pastel y synthwave.
 
-"💾 Nadie necesita comprenderlo. Basta con que exista."
-                                              "— Tu Alma Romántica 🌸✨"
+💾 Nadie necesita comprenderlo. Basta con que exista.
+                                              — Tu Alma Romántica 🌸✨
 """
 st.text(entrada)
     if st.button("🌟 Generar Diario"):
         st.markdown(f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>", unsafe_allow_html=True)
 """
+
