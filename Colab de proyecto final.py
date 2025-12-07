@@ -57,14 +57,19 @@ texto = """
 El Romanticismo no fue solo un movimiento artístico y literario que floreció en Europa a finales del siglo XVIII y principios del XIX, sino también una profunda corriente filosófica y cultural que surgió como una reacción directa y a menudo vehemente contra el racionalismo estricto de la Ilustración. Mientras que la Ilustración había exaltado la razón, la objetividad y el análisis científico como el camino principal hacia el conocimiento y el progreso, el Romanticismo se centró en la primacía de la emoción, la subjetividad, la intuición y el sentimiento. Fue una reivindicación del individuo, del mundo interior y de todo aquello que la razón pura no podía abarcar. Tres temas centrales de esta época fueron la naturaleza y el sentimiento, el yo y la subjetividad y lo irracional y lo trascendente. En primer lugar, la naturaleza dejó de ser vista como una simple máquina que podía ser analizada (como la veía la ciencia), para convertirse en un ser vivo, dinámico y, a menudo, indomable. Los románticos buscaron una conexión mística con ella, viéndola como un reflejo del espíritu humano y un escape de la industrialización y la artificialidad de la vida urbana. En segundo lugar, el yo y la subjetividad puso un énfasis radical en la experiencia personal y el genio individual. El filósofo o artista romántico era visto como un héroe, un ser dotado de una visión única capaz de acceder a verdades más profundas que las que ofrecía la lógica. En tercer lugar, lo irracional y lo trascendente exploró activamente lo oscuro, lo misterioso, lo sublime y lo infinito. Fenómenos como los sueños, el folclore, lo sobrenatural y la historia medieval (en contraste con la antigüedad clásica preferida por la Ilustración) se convirtieron en temas de gran interés, buscando la verdad en el corazón de lo irracional y lo desconocido.
 """
 
-if  pagina_seleccionada == '🐇Personalidad':
+if pagina_seleccionada == '🐇Personalidad':
 
-# SISTEMA DE DIAGNÓSTICO DE PERSONALIDAD (Versión Narrativa)
+    # ------------------------------------------------------------
+    # SISTEMA DE DIAGNÓSTICO DE PERSONALIDAD (Versión Narrativa)
+    # ------------------------------------------------------------
+    # Este programa conduce al usuario por una serie de preguntas
+    # diseñadas para explorar los cimientos emocionales, racionales
+    # y simbólicos de su personalidad. Cada respuesta aporta matices
+    # a un retrato final, casi como si el código pintara un óleo
+    # psicológico del individuo.
 
-# Este programa conduce al usuario por una serie de preguntas diseñadas para explorar los cimientos emocionales, racionales y simbólicos de su personalidad. Cada respuesta aporta matices a un retrato final, casi como si el código pintara un óleo psicológico del individuo.
-
-# Diccionario para almacenar las respuestas del usuario.
-respuestas = {}
+    # Diccionario para almacenar las respuestas del usuario.
+    respuestas = {}
 
 # ------------------------------------------------------------
 # FUNCIONES DE APOYO
@@ -281,4 +286,5 @@ print("\n───────────────────────�
 print("✨ TU ENTRADA DE DIARIO VAPORWAVE ✨")
 print("──────────────────────────────────────\n")
 print(generar_diario_vaporwave(diario))
+
 
