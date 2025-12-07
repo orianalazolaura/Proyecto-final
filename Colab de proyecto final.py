@@ -115,7 +115,7 @@ elif pagina_seleccionada == '🐇Diario de un genio incomprendido':
 
     def generar_diario_vaporwave(sentimiento, deseo, clima):
         return f"""
-    entrada = f"""
+    entrada = """
 🌴*EL DIARIO DEL GENIO INCOMPRENDIDO* 🌴
 💭 Hoy me siento: {sentimiento} 🌸
 No sé si es un glitch en mi matrix interior o un destello de claridad en la neón-tormenta.
@@ -133,5 +133,6 @@ st.text(entrada)
     if st.button("🌟 Generar Diario"):
         st.markdown(f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>", unsafe_allow_html=True)
 """
+
 
 
