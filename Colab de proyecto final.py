@@ -132,8 +132,9 @@ Cada nube refleja mi aura retro-futurista, vibrando en 80s pastel y synthwave.
 💾 Nadie necesita comprenderlo. Basta con que exista.
                                               — Tu Alma Romántica 🌸✨
 """
-
+st.text(entrada)
     if st.button("🌟 Generar Diario"):
         st.markdown(f"<pre style='color:#FF77FF;'>{generar_diario_vaporwave(sentimiento, deseo, clima)}</pre>", unsafe_allow_html=True)
+
 
 
